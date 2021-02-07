@@ -1,0 +1,50 @@
+<main class="nhsuk-main-wrapper" id="maincontent">
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-three-quarters">
+      <form action="/enter-code" method="POST">
+        <h1>Who are you?</h1>
+
+        <fieldset class="nhsuk-fieldset">
+          <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+            <h2 class="nhsuk-fieldset__heading">
+              What is your name?
+            </h2>
+          </legend>
+
+          <div class="nhsuk-form-group">
+            <label class="nhsuk-label" for="first_name">
+              First name <span class="nhsuk-u-visually-hidden">line 1 of 2</span>
+            </label>
+            <input class="nhsuk-input" id="first_name" name="first_name" type="text">
+          </div>
+
+          <div class="nhsuk-form-group">
+            <label class="nhsuk-label" for="last_name">
+              Last name <span class="nhsuk-u-visually-hidden">line 2 of 2</span>
+            </label>
+            <input class="nhsuk-input" id="last_name" name="last_name" type="text">
+          </div>
+        </fieldset>
+
+        <fieldset class="nhsuk-fieldset">
+          <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+            <h2 class="nhsuk-fieldset__heading">
+              What is your followup vaccination code?
+            </h2>
+          </legend>
+
+          <div class="nhsuk-form-group">
+            <label class="nhsuk-label" for="code">
+              Code
+            </label>
+            <input class="nhsuk-input nhsuk-input--width-5" id="code" name="code" type="text">
+          </div>
+        </fieldset>
+
+        <button class="nhsuk-button" type="submit">
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+</main>
