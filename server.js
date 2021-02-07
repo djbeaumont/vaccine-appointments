@@ -40,7 +40,7 @@ app.post('/enter-code', async (req, res) => {
     await db.checkAndMarkCompleted(code);
     res.render('success');
   } catch (err) {
-    res.render('enter-code');
+    res.render('enter-code', { error: true });
   }
 });
 
